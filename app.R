@@ -1,5 +1,8 @@
 library(shiny)
 library(useself)
+library(logger)
+
+log_info("Script Starting up")
 
 generate_story <- function(noun, verb, adjective, adverb) {
   glue::glue("
